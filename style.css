@@ -1,0 +1,583 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*POCETNA*/
+
+/*HEADER*/
+
+@font-face{
+    font-family: logoFont;
+    src: url("fonts/Ants\ Valley\ -\ Personal\ Use.otf");
+}
+
+#container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #ffffff;
+    padding-top: 30px;
+    min-height: 65px;
+    box-shadow: 0 4px 4px -5px black;
+    position: sticky;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.header a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Century Gothic';
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    display: inline;
+    padding: 0 20px 0 40px;
+}
+
+.header #logo {
+    float: left;
+}
+
+.header #logo h1 {
+    margin: 0;
+    font-family: 'logoFont';
+    color: #966873;
+    transition: 0.3s;
+    font-weight: lighter;
+}
+
+.header nav {
+    float: right;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.header .current a {
+    color: #966873;
+    font-weight: bold;
+}
+
+.header a:hover {
+    color: #966873;
+}
+
+.sticky {
+    top: 0px;
+    width: 100%;
+    min-height: 55px;
+    transition: 0.3s;
+    padding-top: 13px;
+}
+
+.sticky #logo h1 {
+    font-size: 29px;
+}
+
+
+/*SHOWCASE*/
+
+
+#showcase {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/SRD05324-2.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: left;
+    overflow: hidden;
+    height: calc(100vh - 5.9em); 
+}
+#showcaseCont{
+    
+}
+#showcase p {
+    color: #ffffff;
+    font-family: "Century Gothic";
+    font-size: 3em;
+    z-index: 0;
+    /* padding-top: calc(52vh - 5em);
+    padding-left: 6vw; */
+    -webkit-animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -ms-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    animation: fadein 3s;
+}
+#showcase .btn{
+    /* margin-left: 6vw; */
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #ffffff;
+    color: #ffffff;
+    -webkit-animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -ms-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    animation: fadein 3s;
+}
+#showcase .btn:hover{
+    border-color: #ffa9bd;
+    color: #ffa9bd;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*O NAMA*/
+
+.btnArea {
+    text-align: center;
+    overflow: hidden;
+    height: calc(80vh - 5.9em); 
+    background: linear-gradient(#966873, #ffffff, 90deg);
+}
+
+.btnArea h1 {
+    font-family: 'Century Gothic';
+    font-size: 2.5em;
+    /* margin-top: 200px;
+    padding: 0; */
+    margin-bottom: 40px;
+    padding-top: calc(40vh - 5.5em);
+}
+
+.btnArea p {
+    font-family: 'Century Gothic';
+    margin: 0 0 40px 0;
+    padding: 0;
+    font-size: 1.3em;
+}
+
+.btn {
+    background-color: white;
+    border: 1px black solid;
+    color: black;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Century Gothic';
+    margin-bottom: 120px;
+}
+
+.btn:hover {
+    background-color: #966873;
+    color: white;
+    border: 1px #966873 solid;
+    transition: 0.3s;
+}
+
+
+/*PRE I POSLE*/
+
+#ba {
+    background: url('img/SRD05310-2.jpg') no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+    overflow: hidden;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background: #000000;
+    min-height: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#footerContainer {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    padding-top: 110px;
+}
+
+#social li {
+    display: inline;
+    padding: 0 15px 0 15px;
+}
+
+#social {
+    width: 30%;
+    margin: auto;
+    flex: 1;
+}
+
+#social img {
+    height: auto;
+    width: 100px;
+}
+
+#contact p {
+    color: #ffffff;
+    margin-bottom: 0;
+    font-family: 'Century Gothic';
+    margin-top: 20px;
+}
+
+#contact {
+    flex: 0.5;
+}
+
+#footerLogo h1 {
+    margin: 0;
+    font-family: 'logoFont';
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+#footerLogo a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#footerLogo {
+    flex: 0.5;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 15px;
+    border-radius: 50px;
+  }
+  
+  .fa:hover {
+      opacity: 0.8;
+      color: #966873;
+  }
+  
+  .fa-facebook {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .fa-instagram {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .fa-google-plus {
+    background: #ffffff;
+    color: #000000;
+  }
+
+/*POCETNA KRAJ*/
+
+
+/*O NAMA*/
+
+
+/*PRVI DEO*/
+
+#txt1 {
+    min-height: 690px;
+    text-align: center;
+    overflow: hidden;
+    background-image: linear-gradient(-60deg, #966873, #332428);
+}
+
+#txt1 h1 {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 42px;
+    margin: 0;
+    margin-top: 250px;
+}
+
+#txt1 p {
+    font-family: 'Century Gothic';
+    color: #ffffff;
+    font-size: 19px;
+}
+
+
+/*DRUGI DEO*/
+
+#txt2 {
+    min-height: 690px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#txt2 h1 {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    color: #000000;
+    font-size: 42px;
+    margin: 0;
+    margin-top: 250px;
+}
+
+#txt2 p {
+    font-family: 'Century Gothic';
+    color: #000000;
+    font-size: 19px;
+}
+
+
+/*TRECI DEO*/
+
+#txt3 {
+    min-height: 690px;
+    text-align: center;
+    overflow: hidden;
+    background-image: linear-gradient(-60deg, #966873, #332428);
+}
+
+#txt3 h1 {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 42px;
+    margin: 0;
+    margin-top: 250px;
+}
+
+#txt3 p {
+    font-family: 'Century Gothic';
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #6b4850;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "century gothic";
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #000000;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 60px;
+    padding: 0;
+}
+
+#navButton {
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    color: #966873;
+    display: none;
+}
+
+
+/*Media query*/
+
+@media only screen and (max-width: 884px) {
+    #navButton {
+        display: block;
+    }
+    .header li {
+        display: none;
+    }
+    .header nav {
+        margin: 0;
+    }
+    .header #logo h1 {
+        font-size: 25px;
+    }
+    .header {
+        min-height: 60px;
+        padding-top: 25px;
+    }
+    .sticky {
+        top: 0px;
+        width: 100%;
+        min-height: 50px;
+        transition: 0.3s;
+        padding-top: 13px;
+    }
+    #showcase {
+        min-height: 500px;
+    }
+    #showcase p {
+        font-size: 20px;
+        margin-top: 200px;
+    }
+    .btnArea {
+        text-align: center;
+        overflow: hidden;
+    }
+    .btnArea h1 {
+        font-family: 'Century Gothic';
+        margin-top: 70px;
+        padding: 0;
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+    .btnArea p {
+        font-family: 'Century Gothic';
+        margin: 0 0 30px 0;
+        padding: 0;
+        font-size: 15px;
+    }
+    .btn {
+        background-color: white;
+        border: 2px black solid;
+        color: black;
+        padding: 20px 40px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 13px;
+        cursor: pointer;
+        font-family: 'Century Gothic';
+        font-weight: bold;
+        margin-bottom: 70px;
+    }
+    .btn:hover {
+        background-color: #966873;
+        color: white;
+        border: 2px white solid;
+        transition: 0.3s;
+    }
+    #ba {
+        background: url('img/slika2.jpg') no-repeat;
+        background-size: cover;
+        min-height: 500px;
+        overflow: hidden;
+    }
+    footer {
+        background: #000000;
+        min-height: 200px;
+        text-align: center;
+    }
+    #footerContainer {
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        padding-top: 60px;
+    }
+    #social li {
+        display: inline;
+        padding: 0 15px 0 15px;
+    }
+    #social {
+        width: 30%;
+        margin: auto;
+        flex: 1;
+    }
+    #social img {
+        height: auto;
+        width: 60px;
+    }
+    #contact p {
+        color: #ffffff;
+        margin-bottom: 0;
+        font-family: 'Century Gothic';
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    #contact {
+        flex: 0.5;
+    }
+    #footerLogo h1 {
+        margin: 0;
+        margin-bottom: 30px;
+        font-family: 'Ants Valley - Personal Use';
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    #footerLogo a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    #footerLogo {
+        flex: 0.5;
+    }
+}
