@@ -181,7 +181,7 @@ ul {
 .btnArea {
     text-align: center;
     overflow: hidden;
-    height: calc(80vh - 5.9em); 
+    height: calc(60vh - 5.9em); 
     background: linear-gradient(#966873, #ffffff, 90deg);
 }
 
